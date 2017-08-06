@@ -9,11 +9,28 @@
         %a.navbar-brand{:href => "/pages/index"}= t('views.shared.menu.title')
       .navbar-collapse.collapse.navbar-inverse-collapse
         %ul.nav.navbar-nav
-          %li{class: "#{'active' if current_page?('/pages/about')}"}
+          %li.menu-button{class: "#{'active' if current_page?('/pages/about')}"}
             = link_to 'About', '/pages/about'#, class: 'btn btn-link'
-          %li{class: "#{'active' if current_page?('/pages/cv')}"}
+          %li.menu-button{class: "#{'active' if current_page?('/pages/cv')}"}
             = link_to 'CV', '/pages/cv'#, class: 'btn btn-link'
-          %li{class: "#{'active' if current_page?('/pages/portfolio')}"}
+          %li.menu-button{class: "#{'active' if current_page?('/pages/portfolio')}"}
             = link_to 'Portfolio', '/pages/portfolio'#, class: 'btn btn-link'
-          %li{class: "#{'active' if current_page?('/pages/blog')}"}
+          %li.menu-button{class: "#{'active' if current_page?('/pages/blog')}"}
             = link_to 'Blog', '/pages/blog'#, class: 'btn btn-link'
+          %li.menu-button.dropdown
+            %a.dropdown-toggle{"data-target" => "#", "data-toggle" => "dropdown", :href => "bootstrap-elements.html"}
+              Elsewhere
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "javascript:void(0)"} Action
+              %li
+                %a{:href => "javascript:void(0)"} Another action
+              %li
+                %a{:href => "javascript:void(0)"} Something else here
+              %li.divider
+              %li.dropdown-header Dropdown header
+              %li
+                %a{:href => "javascript:void(0)"} Separated link
+              %li
+                %a{:href => "javascript:void(0)"} One more separated link

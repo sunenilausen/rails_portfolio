@@ -1,0 +1,23 @@
+.navbar .navbar-nav > li > a {
+  width: 15vh;
+  text-align: center;
+}
+
+.navbar-brand {
+  width: 20vh;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.navbar.navbar-inverse {
+  background-color: transparent;
+  font-size: 1.3em;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+
+.dropdown-menu > li > a  {
+  color: white;
+}
