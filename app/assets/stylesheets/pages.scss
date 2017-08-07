@@ -1,8 +1,17 @@
 @import "_colors";
 
 body {
-  
   background-color: #FFFFFF;
+}
+
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  vertical-align: middle; 
+  overflow: hidden; 
 }
 
 #welcome {
@@ -15,11 +24,9 @@ body {
 }
 
 #line-drawing {
-  margin-top: 10vh;
-  width: 100vh;
-  // display: flex; 
-  // align-items: center; 
-  // justify-content: center;
+  margin-top: 15vh;
+  margin-left: 5vh;
+  // width: 110vh;
 }
 
 .er {
