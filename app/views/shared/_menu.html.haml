@@ -1,5 +1,5 @@
 .bs-component
-  .navbar.navbar-inverse
+  .navbar.navbar-inverse.navbar-fixed-top
     .container-fluid
       .navbar-header
         %button.navbar-toggle{"data-target" => ".navbar-inverse-collapse", "data-toggle" => "collapse", :type => "button"}
@@ -9,10 +9,10 @@
         %a.navbar-brand{:href => "/pages/index"} Sune Nilausen
       .navbar-collapse.collapse.navbar-inverse-collapse
         %ul.nav.navbar-nav
-          %li.menu-button{class: "#{'active' if current_page?('/pages/about')}"}
-            = link_to 'About', '/pages/about'#, class: 'btn btn-link'
+          %li.menu-button{class: "#{'active' if current_page?('/pages/index#about')}"}
+            = link_to 'About', '/pages/index#about'#, class: 'btn btn-link'
           %li.menu-button{class: "#{'active' if current_page?('/pages/cv')}"}
-            = link_to 'CV', '/pages/cv'#, class: 'btn btn-link'
+            = link_to 'CV', '/pages/index#cv'#, class: 'btn btn-link'
           %li.menu-button{class: "#{'active' if current_page?('/pages/portfolio')}"}
             = link_to 'Portfolio', '/pages/portfolio'#, class: 'btn btn-link'
           %li.menu-button{class: "#{'active' if current_page?('/pages/blog')}"}

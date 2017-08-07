@@ -14,7 +14,7 @@ $(document).on 'ready turbolinks:load', (e) ->
     duration: 3000)
 
   lineDrawing = anime(
-    targets: '#lineDrawing .lines path'
+    targets: '#line-drawing .lines path'
     strokeDashoffset: [
       anime.setDashoffset
       0
