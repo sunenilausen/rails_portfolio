@@ -1,0 +1,80 @@
+.skill-square {
+  height: 4em;
+  padding: 1em 1em 1em 1em;
+}
+
+.css-skill {
+  width: 30em;
+  background-color: red;
+  color: white;
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+}
+
+.animejs-skill {
+  width: 5em;
+  background-color: red;
+  color: white;
+  transform-origin: left;
+}
+
+.ruby-skill {
+  width: 40em;
+  background-color: blue;
+  color: white;
+  animation-duration: 1.3s;
+  animation-delay: 0s;
+}
+
+.rails-skill {
+  width: 50em;
+  background-color: teal;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.javascript-skill {
+  width: 30em;
+  background-color: orange;
+  color: white;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+}
+
+.sql-skill {
+  width: 20em;
+  background-color: purple;
+  color: white;
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+}
+
+.stretchTowardsRight {
+  animation-name: stretchTowardsRight;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: left;
+}
+
+.skills {
+  margin-top: 5vh;
+  margin-left: 5vh;
+  height: 100%;
+  width: 100%;
+}
+
+.text-square {
+  z-index: 1;
+  padding: 1em 1em 1em 1em;
+  position: absolute;
+}
+
+
+@keyframes stretchTowardsRight {
+  0% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def dickbutt
   end
+
+  def skills
+  end
 end
