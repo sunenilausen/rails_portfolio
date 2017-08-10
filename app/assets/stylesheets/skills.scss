@@ -31,19 +31,19 @@
 
 .sql-skill {
   @include skill-square;
-  width: 2em;
-  background-color: purple;
+  width: 3em;
+  background-color: #A600A6;
 }
 
 .csharp-skill {
   @include skill-square;
-  width: 3em;
+  width: 2em;
   background-color: #00B400;
 }
 
 .scala-skill {
   @include skill-square;
-  width: 3em;
+  width: 2em;
   background-color: #E0F000;
 }
 
