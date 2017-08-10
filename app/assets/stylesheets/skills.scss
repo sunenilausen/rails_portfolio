@@ -1,53 +1,56 @@
-.skill-square {
+@mixin skill-square {
   height: 4em;
   padding: 1em 1em 1em 1em;
+  transform-origin: left;
+  color: white;
 }
 
 .css-skill {
-  width: 30em;
+  @include skill-square;
+  width: 4em;
   background-color: red;
-  color: white;
-  animation-duration: 0.6s;
-  animation-delay: 0s;
-}
-
-.animejs-skill {
-  width: 5em;
-  background-color: red;
-  color: white;
-  transform-origin: left;
 }
 
 .ruby-skill {
-  width: 40em;
+  @include skill-square;
+  width: 5em;
   background-color: blue;
-  color: white;
-  animation-duration: 1.3s;
-  animation-delay: 0s;
 }
 
 .rails-skill {
-  width: 50em;
-  background-color: teal;
-  color: white;
-  animation-duration: 1s;
-  animation-delay: 0s;
+  @include skill-square;
+  width: 6em;
+  background-color: #00B3B3;
 }
 
 .javascript-skill {
-  width: 30em;
+  @include skill-square;
+  width: 4em;
   background-color: orange;
-  color: white;
-  animation-duration: 1.2s;
-  animation-delay: 0s;
 }
 
 .sql-skill {
-  width: 20em;
+  @include skill-square;
+  width: 2em;
   background-color: purple;
-  color: white;
-  animation-duration: 0.6s;
-  animation-delay: 0s;
+}
+
+.csharp-skill {
+  @include skill-square;
+  width: 3em;
+  background-color: #00B400;
+}
+
+.scala-skill {
+  @include skill-square;
+  width: 3em;
+  background-color: #E0F000;
+}
+
+.brain-surgery-skill {
+  @include skill-square;
+  width: 10em;
+  background-color: #FF40DD;
 }
 
 .stretchTowardsRight {
@@ -58,9 +61,8 @@
 
 .skills {
   margin-top: 5vh;
-  margin-left: 5vh;
   height: 100%;
-  width: 100%;
+  width: 100vh;
 }
 
 .text-square {
@@ -69,6 +71,9 @@
   position: absolute;
 }
 
+.brain-surgery {
+  margin-left: -9em;
+}
 
 @keyframes stretchTowardsRight {
   0% {
