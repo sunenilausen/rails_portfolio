@@ -16,13 +16,13 @@
   background-color: white;
   color: $primary;
   font-size: 1.3em;
-  opacity: 0;
+  // opacity: 0;
 }
 
 .dropdown-menu {
-  background-color: transparent;
+  // background-color: transparent;
 }
 
 .dropdown-menu > li > a  {
-  color: white;
+  color: $primary;
 }

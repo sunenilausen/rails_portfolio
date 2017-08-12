@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def skills
   end
+
+  def timeline
+  end
 end

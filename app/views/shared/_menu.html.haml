@@ -12,9 +12,9 @@
           .navbar-collapse.collapse.navbar-inverse-collapse
             %ul.nav.navbar-nav
               %li.menu-button{class: "#{'active' if current_page?('/pages/index#about')}"}
-                = link_to 'About', '/pages/index#about'#, class: 'btn btn-link'
+                = link_to 'About', 'about'#, class: 'btn btn-link'
               %li.menu-button{class: "#{'active' if current_page?('/pages/cv')}"}
-                = link_to 'CV', '/pages/index#cv'#, class: 'btn btn-link'
+                = link_to 'CV', 'cv'#, class: 'btn btn-link'
               %li.menu-button{class: "#{'active' if current_page?('/pages/portfolio')}"}
                 = link_to 'Portfolio', '/pages/portfolio'#, class: 'btn btn-link'
               %li.menu-button{class: "#{'active' if current_page?('/pages/blog')}"}

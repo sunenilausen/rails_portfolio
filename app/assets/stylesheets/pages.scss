@@ -1,5 +1,11 @@
 @import "_colors";
 
+
+@mixin sub-page {
+  color: black;
+  min-height: 100vh;
+}
+
 body {
   background-color: #FFFFFF;
 }
@@ -47,17 +53,19 @@ body {
 }
 
 #about {
+  @include sub-page;
   background-color: $primary;
-  color: black;
-  height: 100vh;
 }
 
 #cv {
+  @include sub-page;
   background-color: $secondary;
-  color: black;
-  height: 100vh;
 }
 
 .dickbutt {
   margin-left: 20vh;
+}
+
+.page-card {
+  margin-top: 10vh;
 }
