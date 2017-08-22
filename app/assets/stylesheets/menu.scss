@@ -33,3 +33,14 @@
 .dropdown-menu > li > a  {
   color: $primary;
 }
+
+@media screen and (min-width: 768px) {
+  .nav-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .move-nav-left {
+    margin-left: -16vh;
+  }
+}

@@ -1,24 +1,5 @@
 @import "_colors";
 
-.timeline-card-header {
-  width: 100%;
-  color: white;
-  padding: 1em;
-  font-size: 1.5em;
-  height: 3.2em;
-}
-
-.timeline-card {
-  width: 100%;
-  z-index: 2;
-}
-
-@media screen and (min-width: 768px) {
-  .timeline-card {
-    width: 40%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .timetrack {display: none;}
 }
@@ -34,9 +15,11 @@
     background-color: white;
     font-weight: bold;
   }
-}
 
-@media screen and (min-width: 768px) {
+  .timeline-card {
+    width: 40%;
+  }
+
   .arrow-right {
     width: 0; 
     height: 0; 
@@ -47,9 +30,7 @@
     margin-top: 1.5em;
     position: absolute;
   }
-}
 
-@media screen and (min-width: 768px) {
   .arrow-left {
     width: 0; 
     height: 0; 
@@ -60,6 +41,19 @@
     margin-left: -1.6em;
     margin-top: -0.25em;
   }
+}
+
+.timeline-card-header {
+  width: 100%;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+  height: 3.2em;
+}
+
+.timeline-card {
+  width: 100%;
+  z-index: 2;
 }
 
 .timeline-page {
