@@ -1,12 +1,13 @@
-.card.timeline-card
-  %div(class = "arrow-#{direction}")
-  .timeline-card-header.bg-primary.d-flex.align-items-center
-    %h2
-      2015
-    = header_text
+.d-flex.width100
+  .card.timeline-card
+    %div(class = "arrow-#{direction}")
+    .timeline-card-header.bg-primary.d-flex.align-items-center
+      %h2
+        2015
+      = header_text
 
-  .card-body
-    =body_text
+    .card-body
+      =body_text
 
-.timetrack
-  o
+  .timetrack.d-flex.justify-content-center.width100
+    o

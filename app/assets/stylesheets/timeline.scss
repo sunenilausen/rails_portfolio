@@ -10,6 +10,7 @@
 
 .timeline-card {
   width: 100%;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,11 +19,24 @@
   }
 }
 
-.timetrack {
-  width: 10%;
-  color: #C5C5C5;
-  background-color: white;
+@media screen and (max-width: 768px) {
+  .timetrack {display: none;}
 }
+
+@media screen and (min-width: 768px) {
+  .timetrack {
+    margin-top: 1.5em;
+    z-index: 1;
+    width: 20%;
+    height: 25px;
+    left: 3em;
+    color: #C5C5C5;
+    background-color: white;
+    font-weight: bold;
+  }
+}
+
+
 
 @media screen and (min-width: 768px) {
   .arrow-right {
