@@ -70,33 +70,7 @@ body {
   margin-top: 10vh;
 }
 
-.timeline-card-header_1 {
+
+.bg-primary {
   background-color: $primary;
-  width: 100%;
-  color: white;
-  padding: 1em;
-  font-size: 1.5em;
-  height: 3.2em;
-}
-
-.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 0.8em solid transparent;
-  border-bottom: 0.8em solid transparent;
-  border-left: 0.8em solid $primary;
-  float: right;
-  margin-right: -1.6em;
-  margin-top: -0.25em;
-}
-
-.arrow-left {
-  width: 0; 
-  height: 0; 
-  border-top: 0.8em solid transparent;
-  border-bottom: 0.8em solid transparent;
-  border-right: 0.8em solid $primary;
-  float: left;
-  margin-left: -1.6em;
-  margin-top: -0.25em;
 }

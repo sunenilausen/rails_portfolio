@@ -1,9 +1,16 @@
 @import "_colors";
 
 .navbar .navbar-nav > li > a {
-  padding-left: 5vh;
-  padding-right: 5vh;
   text-align: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar .navbar-nav > li > a {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
 }
 
 .navbar-brand {

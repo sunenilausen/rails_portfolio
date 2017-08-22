@@ -1,8 +1,5 @@
-%section#timeline
-  .col-sm-5
-    = render partial: 'timeline_card', locals: {header_text: "TECHNOLOGY", body_text: "Lorem ipsum dolor sit amet", arrow: 'arrow-right'}
-  .col-sm-2
-    
-  .col-sm-5
-  
-  
+.jumbotron.page-card.timeline-page
+  .d-flex.justify-content-center
+    .vertical-timeline
+  = render partial: 'timeline_card', locals: {header_text: "TECHNOLOGY", body_text: "Lorem ipsum dolor sit amet", direction: 'right'}
+
