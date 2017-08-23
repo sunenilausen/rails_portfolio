@@ -1,46 +1,24 @@
 @import "_colors";
 
-@media screen and (max-width: 768px) {
-  .timetrack {display: none;}
+@mixin arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 0.8em solid transparent;
+  border-bottom: 0.8em solid transparent;
+  position: absolute;
+  margin-top: 1.5em;
 }
 
-@media screen and (min-width: 768px) {
-  .timetrack {
-    margin-top: 1.5em;
-    z-index: 1;
-    width: 20%;
-    height: 25px;
-    left: 3em;
-    color: #C5C5C5;
-    background-color: white;
-    font-weight: bold;
-  }
+@mixin arrow-right {
+  @include arrow;
+  border-left: 0.8em solid;
+  margin-left: 100%;
+}
 
-  .timeline-card {
-    width: 40%;
-  }
-
-  .arrow-right {
-    width: 0; 
-    height: 0; 
-    border-top: 0.8em solid transparent;
-    border-bottom: 0.8em solid transparent;
-    border-left: 0.8em solid $primary;
-    margin-left: 100%;
-    margin-top: 1.5em;
-    position: absolute;
-  }
-
-  .arrow-left {
-    width: 0; 
-    height: 0; 
-    border-top: 0.8em solid transparent;
-    border-bottom: 0.8em solid transparent;
-    border-right: 0.8em solid $primary;
-    float: left;
-    margin-left: -1.6em;
-    margin-top: -0.25em;
-  }
+@mixin arrow-left {
+  @include arrow;
+  border-right: 0.8em solid;
+  margin-left: -0.8em;
 }
 
 .timeline-card-header {
@@ -52,12 +30,78 @@
 }
 
 .timeline-card {
-  width: 100%;
+  // width: 100%;
   z-index: 2;
 }
 
+
+.timetrack {
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .timetrack {display: none;}
+
+  .timeline-card {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timetrack {
+    margin-top: 1.5em;
+    z-index: 1;
+    width: 20%;
+    height: 25px;
+    color: #C5C5C5;
+    background-color: white;
+    font-weight: bold;
+    margin-left: -6vh;
+    margin-right: -6vh;
+  }
+
+  .timeline-card {
+    width: 40%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+  }
+
+  .arrow-left-bg-primary {
+    @include arrow-left;
+    border-right-color: $primary;
+  }
+
+  .arrow-left-bg-secondary {
+    @include arrow-left;
+    border-right-color: $secondary;
+  }
+
+  .arrow-left-bg-tertiary {
+    @include arrow-left;
+    border-right-color: $tertiary;
+  }
+
+  .arrow-right-bg-primary {
+    @include arrow-right;
+    border-left-color: $primary;
+  }
+
+  .arrow-right-bg-secondary {
+    @include arrow-right;
+    border-left-color: $secondary;
+  }
+
+  .arrow-right-bg-tertiary {
+    @include arrow-right;
+    border-left-color: $tertiary;
+  }
+}
+
 .timeline-page {
-  height: 85vh;
+  position: relative;
+  height: 100%;
   width: 100%;
 }
 
@@ -68,7 +112,9 @@
 
 .vertical-timeline {
   position: absolute;
+  right: 50%;
   border-left: solid #D3D3D3;
   width: 1px;
-  height: 80vh;
+  top: 0;
+  bottom: 0;
 }

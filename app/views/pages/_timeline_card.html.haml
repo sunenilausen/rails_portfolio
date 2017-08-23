@@ -1,9 +1,13 @@
-.d-flex.width100
+- row_reverse = right ? "row-reverse" : ""
+- background = "bg-#{color}"
+- arrow = right ? "arrow-left" : "arrow-right"
+
+.d-flex.width100(class = row_reverse)
   .card.timeline-card
-    %div(class = "arrow-#{direction}")
-    .timeline-card-header.bg-primary.d-flex.align-items-center
+    %div{class: "#{arrow}-#{background}"}
+    .timeline-card-header.d-flex.align-items-center(class = background)
       %h2
-        2015
+        = year
       = header_text
 
     .card-body
