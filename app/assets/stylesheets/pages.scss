@@ -17,6 +17,7 @@ body {
   height: auto;
   vertical-align: middle; 
   overflow: hidden; 
+  margin-left: -10vh;
 }
 
 #welcome {
@@ -30,25 +31,25 @@ body {
 
 #line-drawing {
   margin-top: 15vh;
-  margin-left: 5vh;
+  margin-left: 0vh;
   // width: 110vh;
 }
 
 .er {
   margin-left: 80vh;
-  font-size: 1.2em;
+  font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $primary;
+  color: $tertiary;
 }
 
 .el {
   margin-left: 29vh;
   margin-top: 10vh;
-  font-size: 1.2em;
+  font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $secondary;
+  color: $tertiary;
 }
 
 #about {
