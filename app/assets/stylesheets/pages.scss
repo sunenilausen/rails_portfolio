@@ -9,6 +9,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.bg-image {
+  position: absolute;
+}
+
 .svg-container { 
   display: inline-block;
   position: relative;
@@ -50,6 +54,29 @@ body {
   white-space: nowrap;
   color: $tertiary;
 }
+
+@media screen and (max-width: 1350px) {
+  .er {
+    margin-left: 40vh;
+  }
+
+  .el {
+    margin-left: -9vh;
+  }
+}
+
+
+
+// @media screen and (max-width: 768px) {
+//   .er {
+//     margin-left: 0vh;
+//   }
+
+//   .el {
+//     margin-left: 0vh;
+//   }
+// }
+
 
 #about {
   @include sub-page;
