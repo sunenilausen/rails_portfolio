@@ -2,11 +2,12 @@
   .navbar.navbar-inverse.navbar-fixed-top
     .container-fluid
       .navbar-header
-        %button.navbar-toggle{"data-target" => ".navbar-inverse-collapse", "data-toggle" => "collapse", :type => "button"}
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand{:href => "/pages/index"} Sune Nilausen
+        .d-flex.justify-content-between
+          %a.navbar-brand{:href => "/pages/index"} Sune Nilausen
+          %button.navbar-toggle{"data-target" => ".navbar-inverse-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
       .nav-items
         .navbar-collapse.collapse.navbar-inverse-collapse.move-nav-left
           %ul.nav.navbar-nav

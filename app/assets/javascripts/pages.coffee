@@ -1,14 +1,14 @@
 $(document).on 'ready turbolinks:load', (e) ->
   durationL = anime(
     targets: '#duration .el'
-    translateX: '15vh'
+    translateX: '5vh'
     opacity: [0,1]
     delay: 2500
     duration: 3000)
 
   durationR = anime(
     targets: '#duration .er'
-    translateX: '-15vh'
+    translateX: '-5vh'
     opacity: [0,1]
     delay: 2500
     duration: 3000)
