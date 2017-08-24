@@ -14,10 +14,26 @@
 }
 
 .navbar-brand {
-  width: 20vh;
+  width: 100%;
   text-align: center;
   font-size: 1.3em;
 }
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    width: 20vh;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .move-nav-left {
+    margin-left: -16vh;
+  }
+}
+
 
 .navbar.navbar-inverse {
   background-color: white;
@@ -32,15 +48,4 @@
 
 .dropdown-menu > li > a  {
   color: $primary;
-}
-
-@media screen and (min-width: 768px) {
-  .nav-items {
-    display: flex;
-    justify-content: center;
-  }
-
-  .move-nav-left {
-    margin-left: -16vh;
-  }
 }
