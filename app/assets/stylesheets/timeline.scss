@@ -40,6 +40,10 @@
 
 @media screen and (max-width: 768px) {
   .timetrack {display: none;}
+
+  .timeline-card-wrapper {
+    margin-bottom: 5vh;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -59,9 +63,6 @@
     width: 40%;
     margin-left: 3vh;
     margin-right: 3vh;
-  }
-
-  .timeline-card-wrapper {
   }
 
   .arrow-left-bg-primary {
