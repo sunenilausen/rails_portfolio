@@ -1,17 +1,17 @@
 $(document).on 'ready turbolinks:load', (e) ->
   durationL = anime(
     targets: '#duration .el'
-    translateX: '5vh'
+    translateX: '10vh'
     opacity: [0,1]
-    delay: 2500
-    duration: 3000)
+    delay: 1500
+    duration: 2000)
 
   durationR = anime(
     targets: '#duration .er'
-    translateX: '-5vh'
+    translateX: '-10vh'
     opacity: [0,1]
-    delay: 2500
-    duration: 3000)
+    delay: 1500
+    duration: 2000)
 
   lineDrawing = anime(
     targets: '#line-drawing .lines path'
@@ -22,4 +22,4 @@ $(document).on 'ready turbolinks:load', (e) ->
     easing: 'easeInOutSine'
     duration: 1500
     delay: (el, i) ->
-      i * 250)
+      i * 75)

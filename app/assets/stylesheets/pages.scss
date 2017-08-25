@@ -38,30 +38,24 @@ body {
   margin-left: 0vh;
 }
 
+#subtitle {
+  margin-bottom: 10vh;
+}
+
 .er {
-  margin-left: 15vh;
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $tertiary;
+  color: $primary;
+  margin-left: 10vh;
 }
 
 .el {
-  margin-left: 5vh;
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $tertiary;
-}
-
-@media screen and(min-width: 768px) {
-  .er {
-    margin-left: 45vh;
-  }
-
-  .el {
-    margin-left: 35vh;
-  }
+  color: $primary;
+  margin-left: -10vh;
 }
 
 #about {
