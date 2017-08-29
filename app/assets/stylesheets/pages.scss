@@ -24,6 +24,11 @@ body {
   margin-left: -10vh;
 }
 
+.welcome-image {
+  // height: 10vh;
+  // width: 100%;
+}
+
 #welcome {
   opacity: 1;
   display: flex;
@@ -34,12 +39,12 @@ body {
 }
 
 #line-drawing {
-  margin-top: 15vh;
+  margin-top: 0vh;
   margin-left: 0vh;
 }
 
 #subtitle {
-  margin-bottom: 10vh;
+  margin-top: -10vh;
 }
 
 .er {

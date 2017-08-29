@@ -24,9 +24,15 @@
 .timeline-card-header {
   width: 100%;
   color: white;
-  padding: 1em;
+  padding-left: 1em;
   font-size: 1.5em;
   height: 3.2em;
+  line-height: 1em;
+  display: flex;
+}
+
+.timeline-card-header > p {
+  padding: 1.25em 0.5em 1em 0.25em;
 }
 
 .timeline-card {

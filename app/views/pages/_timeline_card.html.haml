@@ -5,10 +5,11 @@
 .timeline-card-wrapper(class = row_reverse)
   .card.timeline-card
     %div{class: "#{arrow}-#{background}"}
-    .timeline-card-header.d-flex.align-items-center(class = background)
+    .timeline-card-header(class = background)
       %h2
         = year
-      = header_text
+      %p
+        = header_text
 
     .card-body
       =body_text
