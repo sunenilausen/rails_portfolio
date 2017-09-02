@@ -13,13 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
-@import "bootstrap";
-@import "bootstrap-material-design-master/bootstrap-material-design.min";
-@import "bootstrap-material-design-master/ripples.min";
+@import "materialize";
 @import "animejs";
 @import "pages";
 @import "menu";
 @import "skills";
 @import "timeline";
 @import "font-awesome";
+@import "body";

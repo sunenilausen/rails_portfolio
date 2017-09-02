@@ -12,10 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require tether
-//= require bootstrap
 //= require turbolinks
+//= require materialize-sprockets
 //= require anime-master/anime.min.js
-//= require bootstrap-material-design-master/material.min.js
-//= require bootstrap-material-design-master/ripples.min.js
 //= require_tree .

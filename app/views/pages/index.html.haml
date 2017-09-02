@@ -16,13 +16,15 @@
       -# %i.fa.fa-github
     - # hover to color
 
-%img{src: image_path("cphwide4k.jpg"), class: 'img-responsive welcome-image'}
+-# %img{src: image_path("cphwide4k.jpg"), class: 'img-responsive welcome-image'}
 = render 'about'
 
 #cv
   .container
-    .jumbotron.page-card
-      %h2 CV under construction
-      Here is my cv n stuff
+    .card
+      .card-content
+        %span.card-title
+          CV under construction
+        Here is my cv n stuff
 
     = render 'timeline'

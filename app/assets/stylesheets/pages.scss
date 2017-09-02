@@ -5,10 +5,6 @@
   min-height: 100vh;
 }
 
-body {
-  background-color: #FFFFFF;
-}
-
 .bg-image {
   position: absolute;
 }
@@ -71,10 +67,6 @@ body {
 #cv {
   @include sub-page;
   background-color: $secondary;
-}
-
-.dickbutt {
-  margin-left: 20vh;
 }
 
 .page-card {

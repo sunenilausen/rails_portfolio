@@ -1,38 +1,24 @@
-.bs-component
-  .navbar.navbar-inverse.navbar-fixed-top
-    .container-fluid
-      .navbar-header
-        .d-flex.justify-content-between
-          %a.navbar-brand{:href => "/pages/index"} Sune Nilausen
-          %button.navbar-toggle{"data-target" => ".navbar-inverse-collapse", "data-toggle" => "collapse", :type => "button"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-      .nav-items
-        .navbar-collapse.collapse.navbar-inverse-collapse.move-nav-left
-          %ul.nav.navbar-nav
-            %li.menu-button{class: "#{'active' if current_page?('/pages/index#about')}"}
-              = link_to 'About', 'about'#, class: 'btn btn-link'
-            %li.menu-button{class: "#{'active' if current_page?('/pages/cv')}"}
-              = link_to 'CV', 'cv'#, class: 'btn btn-link'
-            %li.menu-button{class: "#{'active' if current_page?('/pages/portfolio')}"}
-              = link_to 'Portfolio', '/pages/portfolio'#, class: 'btn btn-link'
-            %li.menu-button{class: "#{'active' if current_page?('/pages/blog')}"}
-              = link_to 'Blog', '/pages/blog'#, class: 'btn btn-link'
-            -# %li.menu-button.dropdown
-            -#   %a.dropdown-toggle{"data-target" => "#", "data-toggle" => "dropdown", :href => "bootstrap-elements.html"}
-            -#     Elsewhere
-            -#     %b.caret
-            -#   %ul.dropdown-menu
-            -#     %li
-            -#       %a{:href => "javascript:void(0)"} Action
-            -#     %li
-            -#       %a{:href => "javascript:void(0)"} Another action
-            -#     %li
-            -#       %a{:href => "javascript:void(0)"} Something else here
-            -#     %li.divider
-            -#     %li.dropdown-header Dropdown header
-            -#     %li
-            -#       %a{:href => "javascript:void(0)"} Separated link
-            -#     %li
-            -#       %a{:href => "javascript:void(0)"} One more separated link
+.navbar-fixed
+  %nav.transparent
+    .nav-wrapper
+      %a.brand-logo{:href => "#!"} Sune Nilausen
+      %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+        %i.material-icons menu
+      %ul.right.hide-on-med-and-down
+        %li
+          = link_to 'About', 'about'
+        %li
+          = link_to 'CV', 'cv'
+        %li
+          = link_to 'Portfolio', '/pages/portfolio'
+        %li
+          = link_to 'Blog', '/pages/blog'
+      %ul#mobile-demo.side-nav
+        %li
+          = link_to 'About', 'about'
+        %li
+          = link_to 'CV', 'cv'
+        %li
+          = link_to 'Portfolio', '/pages/portfolio'
+        %li
+          = link_to 'Blog', '/pages/blog'
