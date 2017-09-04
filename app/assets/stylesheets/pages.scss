@@ -18,10 +18,10 @@
   position: relative;
   width: 100%;
   max-width: 1300px;
+  min-width: 800px; 
   height: auto;
   vertical-align: middle; 
   overflow: hidden; 
-  margin-left: -10vh;
 }
 
 #welcome {
@@ -31,23 +31,21 @@
   align-items: center;
   justify-content: top;
   height: 100vh;
-  background-color: white;
 }
 
 #line-drawing {
-  margin-top: 0vh;
-  margin-left: 0vh;
+  margin-top: 20vh;
 }
 
 #subtitle {
-  margin-top: -10vh;
+  margin-top: -20%;
 }
 
 .er {
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $primary;
+  color: white;
   margin-left: 20vh;
 }
 
@@ -55,7 +53,7 @@
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $primary;
+  color: white;
   margin-left: 0vh;
 }
 

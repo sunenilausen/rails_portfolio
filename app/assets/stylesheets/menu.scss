@@ -1,9 +1,10 @@
 @import "_colors";
 
-.navbar .navbar-nav > li > a {
+ul > li > a {
   text-align: center;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-left: 3.5vh;
+  padding-right: 3.5vh;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1200px) {
@@ -13,9 +14,10 @@
   }
 }
 
-.navbar-brand {
+.brand-logo {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.9em;
+  padding-left: 5vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,12 +41,4 @@
   color: $primary;
   font-size: 1.3em;
   // opacity: 0;
-}
-
-.dropdown-menu {
-  // background-color: transparent;
-}
-
-.dropdown-menu > li > a  {
-  color: $primary;
 }

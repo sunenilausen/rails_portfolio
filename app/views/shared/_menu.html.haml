@@ -1,24 +1,52 @@
 .navbar-fixed
-  %nav.white
+  %nav.transparent
     .nav-wrapper
-      %a.brand-logo.blue-text{:href => "#!"} Sune Nilausen
-      %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+      %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
+        %i.material-icons menu
+      %a.brand-logo.white-text{:href => "#!"} Sune Nilausen
+      -# %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
         %i.material-icons.blue-text menu
-      %ul.right.hide-on-med-and-down
-        %li
-          = link_to 'About', '#about', class: 'blue-text'
-        %li
-          = link_to 'CV', '#cv', class: 'blue-text'
-        %li
-          = link_to 'Portfolio', '/pages/portfolio', class: 'blue-text'
-        %li
-          = link_to 'Blog', '/pages/blog', class: 'blue-text'
-      %ul#mobile-demo.side-nav
-        %li
-          = link_to 'About', '#about', class: 'blue-text'
-        %li
-          = link_to 'CV', '#cv', class: 'blue-text'
-        %li
-          = link_to 'Portfolio', '/pages/portfolio', class: 'blue-text'
-        %li
-          = link_to 'Blog', '/pages/blog', class: 'blue-text'
+      .d-flex.justify-content-center
+        %ul.hide-on-med-and-down
+          %li
+            = link_to 'About', '#about', class: 'white-text'
+          %li
+            = link_to 'CV', '#cv', class: 'white-text'
+          %li
+            = link_to 'Portfolio', '/pages/portfolio', class: 'white-text'
+          %li
+            = link_to 'Blog', '/pages/blog', class: 'white-text'
+        %ul#mobile-demo.side-nav
+          %li
+            = link_to 'About', '#about', class: 'white-text'
+          %li
+            = link_to 'CV', '#cv', class: 'white-text'
+          %li
+            = link_to 'Portfolio', '/pages/portfolio', class: 'white-text'
+          %li
+            = link_to 'Blog', '/pages/blog', class: 'white-text'
+
+  
+%ul#slide-out.side-nav
+  %li
+    .user-view
+      .background
+        %img{:src => "images/piano.jpg"}/
+      %a{:href => "#!user"}
+        %img.circle{:src => "images/painting.jpg"}/
+      %a{:href => "#!name"}
+        %span.white-text.name John Doe
+      %a{:href => "#!email"}
+        %span.white-text.email jdandturk@gmail.com
+  %li
+    %a{:href => "#!"}
+      %i.material-icons> cloud
+      First Link With Icon
+  %li
+    %a{:href => "#!"} Second Link
+  %li
+    .divider
+  %li
+    %a.subheader Subheader
+  %li
+    %a.waves-effect{:href => "#!"} Third Link With Waves
