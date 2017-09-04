@@ -1,24 +1,24 @@
 .navbar-fixed
-  %nav.transparent
+  %nav.white
     .nav-wrapper
-      %a.brand-logo{:href => "#!"} Sune Nilausen
+      %a.brand-logo.blue-text{:href => "#!"} Sune Nilausen
       %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
-        %i.material-icons menu
+        %i.material-icons.blue-text menu
       %ul.right.hide-on-med-and-down
         %li
-          = link_to 'About', 'about'
+          = link_to 'About', '#about', class: 'blue-text'
         %li
-          = link_to 'CV', 'cv'
+          = link_to 'CV', '#cv', class: 'blue-text'
         %li
-          = link_to 'Portfolio', '/pages/portfolio'
+          = link_to 'Portfolio', '/pages/portfolio', class: 'blue-text'
         %li
-          = link_to 'Blog', '/pages/blog'
+          = link_to 'Blog', '/pages/blog', class: 'blue-text'
       %ul#mobile-demo.side-nav
         %li
-          = link_to 'About', 'about'
+          = link_to 'About', '#about', class: 'blue-text'
         %li
-          = link_to 'CV', 'cv'
+          = link_to 'CV', '#cv', class: 'blue-text'
         %li
-          = link_to 'Portfolio', '/pages/portfolio'
+          = link_to 'Portfolio', '/pages/portfolio', class: 'blue-text'
         %li
-          = link_to 'Blog', '/pages/blog'
+          = link_to 'Blog', '/pages/blog', class: 'blue-text'

@@ -5,6 +5,10 @@
   min-height: 100vh;
 }
 
+.parallax-container {
+  height: 200px;
+}
+
 .bg-image {
   position: absolute;
 }
@@ -20,11 +24,6 @@
   margin-left: -10vh;
 }
 
-.welcome-image {
-  // height: 10vh;
-  // width: 100%;
-}
-
 #welcome {
   opacity: 1;
   display: flex;
@@ -32,6 +31,7 @@
   align-items: center;
   justify-content: top;
   height: 100vh;
+  background-color: white;
 }
 
 #line-drawing {
@@ -60,13 +60,13 @@
 }
 
 #about {
-  @include sub-page;
-  background-color: $primary;
+  // @include sub-page;
+  // background-color: $primary;
 }
 
 #cv {
-  @include sub-page;
-  background-color: $secondary;
+  // @include sub-page;
+  // background-color: $secondary;
 }
 
 .page-card {

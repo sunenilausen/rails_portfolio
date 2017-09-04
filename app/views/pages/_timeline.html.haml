@@ -1,25 +1,21 @@
-.card.page-card.timeline-page
-  .card-content
-    .page-header
-      %span.card-title
-        Experience
-    .page-content
-      %br
-      %br
-      %br
-      %br
-      %br
-      .vertical-timeline
-      = render partial: 'timeline_card', locals: {header_text: "HTX Exam", body_text: "Graduated Holstebro Tekniske Skole (Uddannelses Center Holstebro) with a HTX degree.", year: "2010", right: false, color: 'primary'}
+.container
+  .card.page-card.timeline-page
+    .card-content
+      .page-header
+        %span.card-title
+          Experience
+      .page-content
+        .vertical-timeline
+        = render partial: 'timeline_card', locals: {header_text: "HTX Exam", body_text: "Graduated Holstebro Tekniske Skole (Uddannelses Center Holstebro) with a HTX degree.", year: "2010", right: false, color: 'primary'}
 
-      = render partial: 'timeline_card', locals: {header_text: "B.S. Computer Science", body_text: "Received my bachelor in Computer Science at Aalborg University. Proceeded to enroll in the Masters.", year: "2014", right: true, color: 'secondary'}
+        = render partial: 'timeline_card', locals: {header_text: "B.S. Computer Science", body_text: "Received my bachelor in Computer Science at Aalborg University. Proceeded to enroll in the Masters.", year: "2014", right: true, color: 'secondary'}
 
-      = render partial: 'timeline_card', locals: {header_text: "Coding Pirates Volunteer", body_text: "In Aalborg, Kolding and now Carlsberg i am a volunteer at Coding Pirates where we teach children game development and programming.", year: "2015", right: false, color: 'tertiary'}
+        = render partial: 'timeline_card', locals: {header_text: "Coding Pirates Volunteer", body_text: "In Aalborg, Kolding and now Carlsberg i am a volunteer at Coding Pirates where we teach children game development and programming.", year: "2015", right: false, color: 'tertiary'}
 
-      = render partial: 'timeline_card', locals: {header_text: "Appdevelopment Teacher", body_text: "During spring i taught an optional course in App Development at Svenstrup Skole for secondary schoolers.", year: "2016", right: true, color: 'primary'}
+        = render partial: 'timeline_card', locals: {header_text: "Appdevelopment Teacher", body_text: "During spring i taught an optional course in App Development at Svenstrup Skole for secondary schoolers.", year: "2016", right: true, color: 'primary'}
 
-      = render partial: 'timeline_card', locals: {header_text: "MSc. Computer Science", body_text: "Graduated as a Master of Science in Computer Science with speciality in Games Programming and Machine Intelligence at Aalborg University.", year: "2016", right: false, color: 'secondary'}
+        = render partial: 'timeline_card', locals: {header_text: "MSc. Computer Science", body_text: "Graduated as a Master of Science in Computer Science with speciality in Games Programming and Machine Intelligence at Aalborg University.", year: "2016", right: false, color: 'secondary'}
 
-      = render partial: 'timeline_card', locals: {header_text: "Software Developer", body_text: "Since September 2016 i have been working as a developer at Traels.it where i make websites, apps, APIs, integrations and more.", year: "2016", right: true, color: 'tertiary'}
+        = render partial: 'timeline_card', locals: {header_text: "Software Developer", body_text: "Since September 2016 i have been working as a developer at Traels.it where i make websites, apps, APIs, integrations and more.", year: "2016", right: true, color: 'tertiary'}
 
 

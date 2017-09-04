@@ -1,30 +1,26 @@
 -# %img{src: image_url("copenhagen.jpg"), class: "img-fluid bg-image"}
+
 #welcome
-  = render 'line_drawing'
+  = render 'welcome'
+#about
+  = render 'about'
+#cv
+  = render 'cv'
+#timeline
+  = render 'timeline'
 
-  #subtitle
-    #duration
-      .el
-        MSc. CS.
-    #duration
-      .er
-        Software and Web Developer
+  -# = render 'line_drawing'
 
-  #other_places
-    %a{href: "http://www.github.com/sunenilausen", class: "btn btn-primary btn-fab"}
-      %i.material-icons grade
+  -# #subtitle
+  -#   #duration
+  -#     .el
+  -#       MSc. CS.
+  -#   #duration
+  -#     .er
+  -#       Software and Web Developer
+
+  -# #other_places
+  -#   %a{href: "http://www.github.com/sunenilausen", class: "btn btn-primary btn-fab"}
+  -#     %i.material-icons grade
       -# %i.fa.fa-github
     - # hover to color
-
--# %img{src: image_path("cphwide4k.jpg"), class: 'img-responsive welcome-image'}
-= render 'about'
-
-#cv
-  .container
-    .card
-      .card-content
-        %span.card-title
-          CV under construction
-        Here is my cv n stuff
-
-    = render 'timeline'
