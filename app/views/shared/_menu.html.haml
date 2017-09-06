@@ -1,9 +1,9 @@
 .navbar-fixed
   %nav.transparent
     .nav-wrapper
+      %a.brand-logo.white-text{:href => "#!"} Sune Nilausen
       %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
         %i.material-icons menu
-      %a.brand-logo.white-text{:href => "#!"} Sune Nilausen
       -# %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
         %i.material-icons.blue-text menu
       .d-flex.justify-content-center
@@ -26,14 +26,15 @@
           %li
             = link_to 'Blog', '/pages/blog', class: 'white-text'
 
-  
+
+
 %ul#slide-out.side-nav
   %li
     .user-view
       .background
-        %img{:src => "images/piano.jpg"}/
+        = image_tag "leftorangebluewhole.png"
       %a{:href => "#!user"}
-        %img.circle{:src => "images/painting.jpg"}/
+        %img.circle{:src => image_url("painting.jpg")}/
       %a{:href => "#!name"}
         %span.white-text.name John Doe
       %a{:href => "#!email"}

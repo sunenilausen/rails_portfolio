@@ -1,9 +1,12 @@
 .container
   .row
+    .col-s12
+      %h2.white-text About Title
     .col.s12.m12.l6
       .card
         .card-image
-          = image_tag 'carcasonne.jpg'
+          .about-image{style: "background-image: url(#{image_url('carcasonne.jpg')})"}
+          -# = image_tag 'carcasonne.jpg'
           %span.card-title
             Brætspil
         .card-content
@@ -12,7 +15,7 @@
     .col.s12.m12.l6
       .card
         .card-image
-          = image_tag 'piano.jpg'
+          .about-image{style: "background-image: url(#{image_url('piano.jpg')})"}
           %span.card-title
             Piano
         .card-content
@@ -21,7 +24,7 @@
     .col.s12.m12.l6
       .card
         .card-image
-          = image_tag 'painting.jpg'
+          .about-image{style: "background-image: url(#{image_url('painting.jpg')})"}
           %span.card-title
             Painting
         .card-content

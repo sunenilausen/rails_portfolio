@@ -2,25 +2,18 @@
 
 #welcome
   = render 'welcome'
-#about
+
+#about.z-depth-5
   = render 'about'
+
+-# .parallax-container
+-#   .parallax
+-#     = image_tag('copenhagen.jpg')
+
 #cv
   = render 'cv'
 #timeline
   = render 'timeline'
 
-  -# = render 'line_drawing'
-
-  -# #subtitle
-  -#   #duration
-  -#     .el
-  -#       MSc. CS.
-  -#   #duration
-  -#     .er
-  -#       Software and Web Developer
-
-  -# #other_places
-  -#   %a{href: "http://www.github.com/sunenilausen", class: "btn btn-primary btn-fab"}
-  -#     %i.material-icons grade
-      -# %i.fa.fa-github
-    - # hover to color
+#footer
+  = render 'footer'
