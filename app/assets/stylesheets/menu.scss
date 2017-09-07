@@ -1,9 +1,30 @@
 @import "_colors";
 
 .nav-wrapper {
-  background-image: image-url('granite_1920.jpg');
-  background-position: top;
+  background-image: image-url('bg_1080_flipped.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
 }
+
+nav {
+  box-shadow: none;
+}
+
+// .navbar-inner, .navbar .btn-navbar {
+//   border: 0px;
+// }
+
+// .menu-color {
+//   background-color: #8E5DDA;
+// }
 
 ul > li > a {
   text-align: center;
