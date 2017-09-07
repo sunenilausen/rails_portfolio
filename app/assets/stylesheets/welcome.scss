@@ -1,0 +1,47 @@
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  min-width: 800px; 
+  height: auto;
+  vertical-align: middle; 
+  overflow: hidden; 
+}
+
+#other_places {
+  margin-top: 2vh;
+  width: 300px;
+}
+
+#welcome {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  height: 130vh;
+  overflow: hidden; 
+  // background-image: image_url('bg_1080_flipped');
+  // background-size: cover;
+}
+
+#line-drawing {
+  margin-top: 20rem;
+}
+
+.er {
+  font-size: 1.5em;
+  opacity: 0;
+  white-space: nowrap;
+  color: white;
+  margin-left: 20vh;
+}
+
+.el {
+  font-size: 1.5em;
+  opacity: 0;
+  white-space: nowrap;
+  color: white;
+  margin-left: 0vh;
+}

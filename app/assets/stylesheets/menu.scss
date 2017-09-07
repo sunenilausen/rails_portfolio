@@ -14,6 +14,10 @@
   position: fixed;
 }
 
+.navbar-fixed {
+  overflow: hidden; 
+}
+
 nav {
   box-shadow: none;
 }
@@ -28,41 +32,18 @@ nav {
 
 ul > li > a {
   text-align: center;
-  padding-left: 3.5vh;
-  padding-right: 3.5vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 994px) {
+@media screen and (min-width: 992px) {
   .brand-logo {
-    margin-left: 5vh;
+    margin-left: 5rem;
   }
 }
 
-.brand-logo {
+nav .brand-logo {
   text-align: center;
-  font-size: 1.9em;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar-brand {
-    width: 20vh;
-  }
-
-  .nav-items {
-    display: flex;
-    justify-content: center;
-  }
-
-  .move-nav-left {
-    margin-left: -16vh;
-  }
-}
-
-
-.navbar.navbar-inverse {
-  background-color: white;
-  color: $primary;
-  font-size: 1.3em;
-  // opacity: 0;
+  font-size: 1.5em;
 }

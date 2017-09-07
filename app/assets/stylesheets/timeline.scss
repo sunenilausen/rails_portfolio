@@ -102,7 +102,7 @@
   }
 }
 
-.timeline-page {
+.timeline {
   position: relative;
   height: 100%;
   width: 100%;
@@ -114,6 +114,7 @@
 }
 
 .vertical-timeline {
+  overflow: hidden;
   position: absolute;
   right: 50%;
   border-left: solid #D3D3D3;
