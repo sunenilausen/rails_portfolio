@@ -26,17 +26,24 @@
   color: white;
   padding-left: 1em;
   font-size: 1.5em;
-  height: 3.2em;
+  height: 3.4em;
   line-height: 1em;
   display: flex;
 }
 
 .timeline-card-header > p {
-  padding: 1.25em 0.5em 1em 0.25em;
+  padding: 0.95em 0.5em 0.4em 0.6em;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+.timeline-card-header > h3 {
+  margin: 1rem 0 1.1rem;
 }
 
 .timeline-card {
   z-index: 2;
+  width: 100%;
 }
 
 .timetrack {
@@ -44,7 +51,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .timetrack {display: none;}
 
   .timeline-card-wrapper {
@@ -52,7 +59,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .timetrack {
     margin-top: 1.5em;
     z-index: 1;
