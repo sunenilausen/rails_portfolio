@@ -5,8 +5,8 @@
   min-height: 100vh;
 }
 
-body {
-  background-color: #FFFFFF;
+.parallax-container {
+  height: 200px;
 }
 
 .bg-image {
@@ -18,15 +18,15 @@ body {
   position: relative;
   width: 100%;
   max-width: 1300px;
+  min-width: 800px; 
   height: auto;
   vertical-align: middle; 
   overflow: hidden; 
-  margin-left: -10vh;
 }
 
-.welcome-image {
-  // height: 10vh;
-  // width: 100%;
+#other_places {
+  margin-top: 2vh;
+  width: 300px;
 }
 
 #welcome {
@@ -36,22 +36,23 @@ body {
   align-items: center;
   justify-content: top;
   height: 100vh;
+  // background-image: image_url('bg_1080_flipped');
+  // background-size: cover;
 }
 
 #line-drawing {
-  margin-top: 0vh;
-  margin-left: 0vh;
+  margin-top: 20vh;
 }
 
 #subtitle {
-  margin-top: -10vh;
+  margin-top: -20%;
 }
 
 .er {
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $primary;
+  color: white;
   margin-left: 20vh;
 }
 
@@ -59,22 +60,20 @@ body {
   font-size: 1.5em;
   opacity: 0;
   white-space: nowrap;
-  color: $primary;
+  color: white;
   margin-left: 0vh;
 }
 
 #about {
-  @include sub-page;
-  background-color: $primary;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  // @include sub-page;
+  background-color: #F6A100;
 }
 
 #cv {
-  @include sub-page;
-  background-color: $secondary;
-}
-
-.dickbutt {
-  margin-left: 20vh;
+  // @include sub-page;
+  // background-color: $secondary;
 }
 
 .page-card {
@@ -100,4 +99,10 @@ body {
 
 .page-content {
   position: relative;
+}
+
+.about-image {
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

@@ -1,28 +1,19 @@
 -# %img{src: image_url("copenhagen.jpg"), class: "img-fluid bg-image"}
+
 #welcome
-  = render 'line_drawing'
+  = render 'welcome'
 
-  #subtitle
-    #duration
-      .el
-        MSc. CS.
-    #duration
-      .er
-        Software and Web Developer
+#about.z-depth-5
+  = render 'about'
 
-  #other_places
-    %a{href: "http://www.github.com/sunenilausen", class: "btn btn-primary btn-fab"}
-      %i.material-icons grade
-      -# %i.fa.fa-github
-    - # hover to color
-
-%img{src: image_path("cphwide4k.jpg"), class: 'img-responsive welcome-image'}
-= render 'about'
+-# .parallax-container
+-#   .parallax
+-#     = image_tag('copenhagen.jpg')
 
 #cv
-  .container
-    .jumbotron.page-card
-      %h2 CV under construction
-      Here is my cv n stuff
+  = render 'cv'
+#timeline
+  = render 'timeline'
 
-    = render 'timeline'
+#footer
+  = render 'footer'

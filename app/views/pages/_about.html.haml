@@ -1,5 +1,38 @@
-#about
-  .container
-    .jumbotron.page-card
-      %h2 About under construction
-      %p I am a web developer bla bla bla
+.container
+  .row
+    .col-s12
+      %h2.white-text About Title
+    .col.s12.m12.l6
+      .card
+        .card-image
+          .about-image{style: "background-image: url(#{image_url('carcasonne.jpg')})"}
+          -# = image_tag 'carcasonne.jpg'
+          %span.card-title
+            Brætspil
+        .card-content
+          Kan godt lide brætspil
+
+    .col.s12.m12.l6
+      .card
+        .card-image
+          .about-image{style: "background-image: url(#{image_url('piano.jpg')})"}
+          %span.card-title
+            Piano
+        .card-content
+          Jeg spiller klaver
+
+    .col.s12.m12.l6
+      .card
+        .card-image
+          .about-image{style: "background-image: url(#{image_url('painting.jpg')})"}
+          %span.card-title
+            Painting
+        .card-content
+          Jeg maler stuff
+          
+    .col.s12.m12
+      .card
+        .card-content
+          %span.card-title
+            About under construction
+          %p I am a web developer bla bla bla

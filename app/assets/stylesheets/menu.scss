@@ -1,21 +1,47 @@
 @import "_colors";
 
-.navbar .navbar-nav > li > a {
-  text-align: center;
-  padding-left: 2vh;
-  padding-right: 2vh;
+.nav-wrapper {
+  background-image: image-url('bg_1080_flipped.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
 }
 
-@media screen and (min-width: 1200px) {
-  .navbar .navbar-nav > li > a {
-    padding-left: 5vh;
-    padding-right: 5vh;
+nav {
+  box-shadow: none;
+}
+
+// .navbar-inner, .navbar .btn-navbar {
+//   border: 0px;
+// }
+
+// .menu-color {
+//   background-color: #8E5DDA;
+// }
+
+ul > li > a {
+  text-align: center;
+  padding-left: 3.5vh;
+  padding-right: 3.5vh;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 994px) {
+  .brand-logo {
+    margin-left: 5vh;
   }
 }
 
-.navbar-brand {
+.brand-logo {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.9em;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,12 +65,4 @@
   color: $primary;
   font-size: 1.3em;
   // opacity: 0;
-}
-
-.dropdown-menu {
-  // background-color: transparent;
-}
-
-.dropdown-menu > li > a  {
-  color: $primary;
 }
