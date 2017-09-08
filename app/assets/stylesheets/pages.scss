@@ -29,16 +29,22 @@
 }
 
 .hero {
+  padding: 0 0 5rem 0;
 }
 
-.hero-container {
-  padding: 5rem 5rem 5rem 5rem;
+.hero-title {
+  padding: 2rem 0 2rem 0;
 }
 
-.hero-card-title {
-  padding: 0.4rem 0.4rem 0.4rem 5rem;
+.hero > p {
+  font-size: 1.4em;
 }
 
 .small-caps {
   font-variant: small-caps;
+}
+
+.card-content > .card-title {
+  font-size: 4em;
+  padding: 2rem 2rem 4rem 2rem;
 }
