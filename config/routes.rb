@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/index'
-  get 'pages/dickbutt'
-  get 'pages/skills'
-  get 'pages/timeline'
+  get 'index', to: 'pages#index'
+  get 'portfolio', to: 'pages#portfolio'
+  get 'cv', to: 'pages#cv'
 
   root to: 'pages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

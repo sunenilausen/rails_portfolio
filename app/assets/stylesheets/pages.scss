@@ -13,9 +13,6 @@
   margin-top: -18rem;
 }
 
-#cv {
-}
-
 .bg-primary {
   background-color: $primary;
 }
@@ -40,6 +37,14 @@
   font-size: 1.4em;
 }
 
+.hero-underline {
+  background-color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 0.7rem;
+  width: 8rem;
+}
+
 .small-caps {
   font-variant: small-caps;
 }
@@ -49,8 +54,37 @@
   padding: 2rem 2rem 4rem 2rem;
 }
 
+
+#connect-small {
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   .card-content > .card-title {
     font-size: 3em;
   }
 }
+
+@media screen and (max-width: 900px) {
+  #connect-small {
+    display: inline;
+  }
+
+  #connect {
+    display: none;
+  }
+}
+
+#connect > .btn-floating {
+  margin-left: 0.8em;
+  margin-bottom: -2.3em;
+}
+
+#connect {
+  margin-bottom: 0.5em;
+}
+
+.vertical-center {
+  vertical-align: center;
+}
+

@@ -1,7 +1,7 @@
 .navbar-fixed
   %nav
     .nav-wrapper
-      %a.brand-logo.white-text{:href => "#!"} Sune Nilausen
+      %a.brand-logo.white-text{:href => "/index"} Sune Nilausen
       %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
         %i.material-icons menu
       -# %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
@@ -9,13 +9,13 @@
       .d-flex.justify-content-center
         %ul.hide-on-med-and-down
           %li
-            = link_to 'About', '#about', class: 'white-text'
+            = link_to 'About', '/index#about', class: 'white-text'
           %li
-            = link_to 'CV', '#cv', class: 'white-text'
+            = link_to 'CV', '/cv', class: 'white-text'
           %li
-            = link_to 'Portfolio', '/pages/portfolio', class: 'white-text'
+            = link_to 'Portfolio', '/portfolio', class: 'white-text'
           %li
-            = link_to 'Blog', '/pages/blog', class: 'white-text'
+            = link_to 'Blog', '/blog', class: 'white-text'
         %ul#mobile-demo.side-nav
           %li
             = link_to 'About', '#about', class: 'white-text'

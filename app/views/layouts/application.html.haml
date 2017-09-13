@@ -15,6 +15,6 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
 %body
   = render 'shared/menu'
-  -# = render partial: 'shared/flash', flash: flash
-  .container
   = yield
+  #footer
+    = render 'footer'

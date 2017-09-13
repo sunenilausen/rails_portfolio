@@ -60,6 +60,14 @@
 }
 
 @media screen and (min-width: 900px) {
+  .timeline-header {
+    padding-bottom: 10rem !important;
+  }
+
+  .timeline-card-wrapper {
+    margin-top: -6rem;
+  }
+
   .timetrack {
     margin-top: 1.5em;
     z-index: 1;

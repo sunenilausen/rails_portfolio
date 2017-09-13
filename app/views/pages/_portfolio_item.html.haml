@@ -1,0 +1,12 @@
+.col.s6.m4
+  .card.medium.grow
+    .card-image
+      = image_tag(image)
+      %span.card-title.portfolio-item-title= title
+    .card-content
+      = content
+    .card-action
+      - if github.present?
+        %a{href: "#{github}"} Github
+      - if blog.present?
+        %a{href: "#{blog}"} Blog

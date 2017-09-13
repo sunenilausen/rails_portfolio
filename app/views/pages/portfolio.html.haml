@@ -1,0 +1,24 @@
+.container
+  %ul.tabs.tabs-fixed-width.transparent
+    %li.tab
+      %a.white-text{href: '#test1'} Web
+    %li.tab
+      %a.white-text{href: '#test2'} Painting
+    %li.tab
+      %a.white-text{href: '#test3'} Other
+
+  #test1
+    .row
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: 'nowhere.com', blog: 'alsonotanywhere.com'}
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+  #test2
+    .row
+      = render partial: 'portfolio_item', locals: {image: 'painting.jpg', title: 'Painting', content: 'This is some painting stuff!', github: '', blog: ''}
+  #test3
+    .row
+      = render partial: 'portfolio_item', locals: {image: 'piano.jpg', title: 'Piano', content: 'This is my piano', github: '', blog: ''}
+
