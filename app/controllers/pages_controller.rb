@@ -1,13 +1,15 @@
 class PagesController < ApplicationController
-  def index
-  end
+  # layout 'no_menu', only: [:portfolio]
 
-  def dickbutt
+  def index
   end
 
   def skills
   end
 
-  def timeline
+  def portfolio
+  end
+
+  def cv
   end
 end

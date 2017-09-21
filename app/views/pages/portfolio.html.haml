@@ -1,24 +1,29 @@
+-# = render 'shared/menu', background_class: 'blue darken-3'
+
+-# #portfolio.blue.darken-1
 .container
   %ul.tabs.tabs-fixed-width.transparent
     %li.tab
-      %a.white-text{href: '#test1'} Web
+      %a.white-text{href: '#code'} Code
     %li.tab
-      %a.white-text{href: '#test2'} Painting
+      %a.white-text{href: '#art'} Art
     %li.tab
-      %a.white-text{href: '#test3'} Other
+      %a.white-text{href: '#other'} Other
+  
+#code
+  .portfolio-container
+    = render partial: 'portfolio_item', locals: {image: 'hotshotcowboy.png', title: 'Hot Show Showoff', content: 'Arcade android game in Unity3D', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'ScoutsSmall.png', title: 'Scouts!', content: 'Sidescrolling android game in Unity3D', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+#art
+  .row
+    = render partial: 'portfolio_item', locals: {image: 'painting.jpg', title: 'Painting', content: 'This is some painting stuff!', github: '', blog: ''}
+#other
+  .row
+    = render partial: 'portfolio_item', locals: {image: 'piano.jpg', title: 'Piano', content: 'This is my piano', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
 
-  #test1
-    .row
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: 'nowhere.com', blog: 'alsonotanywhere.com'}
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-      = render partial: 'portfolio_item', locals: {image: 'couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-  #test2
-    .row
-      = render partial: 'portfolio_item', locals: {image: 'painting.jpg', title: 'Painting', content: 'This is some painting stuff!', github: '', blog: ''}
-  #test3
-    .row
-      = render partial: 'portfolio_item', locals: {image: 'piano.jpg', title: 'Piano', content: 'This is my piano', github: '', blog: ''}
 

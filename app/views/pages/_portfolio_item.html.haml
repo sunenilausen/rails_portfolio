@@ -1,7 +1,7 @@
-.col.s6.m4
-  .card.medium.grow
+.portfolio-item
+  .card.grow.portfolio-card
     .card-image
-      = image_tag(image)
+      = image_tag(image, class: 'portfolio-image')
       %span.card-title.portfolio-item-title= title
     .card-content
       = content

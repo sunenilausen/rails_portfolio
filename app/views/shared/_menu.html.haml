@@ -1,5 +1,5 @@
 .navbar-fixed
-  %nav
+  %nav{class: background_class}
     .nav-wrapper
       %a.brand-logo.white-text{:href => "/index"} Sune Nilausen
       %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
@@ -43,6 +43,14 @@
     %a{:href => "#!"}
       %i.material-icons> cloud
       First Link With Icon
+  %li
+    = link_to 'About', '/index#about'
+  %li
+    = link_to 'CV', '/cv'
+  %li
+    = link_to 'Portfolio', '/portfolio'
+  %li
+    = link_to 'Blog', '/blog'
   %li
     %a{:href => "#!"} Second Link
   %li
