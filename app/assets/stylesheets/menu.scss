@@ -6,6 +6,12 @@
   background-attachment: fixed;
 }
 
+.menu-image-blue {
+  background-image: image-url('blue_1080_flipped.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .nav-wrapper {
   content: '';
   // will-change: transform;

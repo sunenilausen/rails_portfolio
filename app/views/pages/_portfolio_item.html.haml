@@ -2,8 +2,8 @@
   .card.grow.portfolio-card
     .card-image
       = image_tag(image, class: 'portfolio-image')
-      %span.card-title.portfolio-item-title= title
-    .card-content
+    .card-content.center
+      .portfolio-title= title
       = content
     .card-action
       - if github.present?

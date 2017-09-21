@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  # layout 'no_menu', only: [:portfolio]
+  layout 'blue_application', only: [:index]
 
   def index
   end
