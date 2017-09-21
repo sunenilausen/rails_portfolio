@@ -7,20 +7,6 @@
   height: 100vh;
 }
 
-@media screen and (min-width: 1334px) {
-	.portfolio-container {
-		
-	}
-}
-
-@media screen and (max-width: 900px) {
-	
-}
-
-@media screen and (max-width: 900px) {
-	
-}
-
 .portfolio-container {
 	width: 100%;
 	display: flex;
@@ -40,7 +26,23 @@
 }
 
 .portfolio-image {
-	height: 250px;
+	max-height: 250px;
+}
+
+@media screen and (max-width: 1334px) {
+	.portfolio-item {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 934px) {
+	.portfolio-item {
+		max-width: 700px;
+	}
+
+	.portfolio-image {
+		max-height: 70%;
+	}
 }
 
 .portfolio-card {
