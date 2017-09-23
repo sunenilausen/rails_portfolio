@@ -1,12 +1,45 @@
-.about-image {
-  height: 300px;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 #about {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #F6A100;
 }
 
+.about-item-text {
+  font-size: 1.4em;
+  width: 60%;
+}
+
+.about-image {
+  width: 30%;
+}
+
+.about-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .about-icon-right {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .about-image {
+    width: 60%;
+  }
+
+  .about-item-text {
+    margin-top: 3rem;
+    width: 100%;
+  }
+}

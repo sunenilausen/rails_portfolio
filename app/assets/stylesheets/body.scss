@@ -44,7 +44,7 @@
 
 .purple-body::before {
   @include background-body;
-  background-image: image-url('bg_1080_flipped.jpg');
+  background-image: image-url('backgrounds/bg_1080_flipped.jpg');
 }
 
 // @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),

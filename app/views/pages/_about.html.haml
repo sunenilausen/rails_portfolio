@@ -5,9 +5,14 @@
         %h1.white-text.small-caps.center About
         .hero-underline
     %p.white-text 
-      i like doing lots of stuff and writing dummy text for my about page, you can see my stuff here.
-      i like doing lots of stuff and writing dummy text for my about page, you can see my stuff here.
-      i like doing lots of stuff and writing dummy text for my about page, you can see my stuff here.
-      i like doing lots of stuff and writing dummy text for my about page, you can see my stuff here.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum quam, hendrerit quis faucibus vitae, pretium ut libero. Integer molestie lacus erat, ac bibendum augue tristique nec. Phasellus bibendum tincidunt lacus faucibus mattis. 
+      Phasellus et nunc tortor. Vivamus sit amet ligula et urna volutpat ultrices. Vivamus in felis consectetur, tincidunt nunc sed, viverra tellus. Aliquam accumsan felis eget felis ultrices, nec accumsan ipsum auctor. Quisque ac commodo nisi
 
-      i like doing lots of stuff and writing dummy text for my about page, you can see my stuff here.
+  .about-item
+    = render partial: 'about_item', locals: {icon: 'keyboarddoc'}
+  .about-item.about-icon-right
+    = render partial: 'about_item', locals: {icon: 'acoustic-guitar'}
+  .about-item
+    = render partial: 'about_item', locals: {icon: 'painting-palette'}
+  .about-item.about-icon-right
+    = render partial: 'about_item', locals: {icon: 'cocktail'}
