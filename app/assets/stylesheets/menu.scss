@@ -7,7 +7,19 @@
 }
 
 .menu-image-blue {
-  background-image: image-url('blue_1080_flipped.jpg');
+  background-image: linear-gradient(
+      to top right, 
+      #1259B3, #1974D1
+    );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-image-teal {
+  background-image: linear-gradient(
+      to top right, 
+      #00796b, #009688 
+    );
   background-size: cover;
   background-attachment: fixed;
 }

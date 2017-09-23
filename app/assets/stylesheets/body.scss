@@ -28,7 +28,18 @@
 
 .blue-body::before {
   @include background-body;
-  background-image: image-url('blue_1080_flipped.jpg');
+  background-image: linear-gradient(
+      to top right, 
+      #1259B3, #1974D1
+    );
+}
+
+.teal-body::before {
+  @include background-body;
+  background-image: linear-gradient(
+      to top right, 
+      #00796b, #009688 
+    );
 }
 
 .purple-body::before {
