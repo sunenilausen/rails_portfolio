@@ -4,8 +4,6 @@
       %a.brand-logo.white-text{:href => "/index"} Sune Nilausen
       %a.button-collapse{"data-activates" => "slide-out", :href => "#"}
         %i.material-icons menu
-      -# %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
-        %i.material-icons.blue-text menu
       .d-flex.justify-content-center
         %ul.hide-on-med-and-down
           %li
@@ -18,19 +16,13 @@
             = link_to 'Blog', root_url(:port => 4000, :only_path => false), class: 'white-text'
 
 %ul#slide-out.side-nav
-  %li
+  %li.center
     .user-view
       .background{class: background_class}
-      %a{:href => "#!user"}
+      .d-flex.justify-content-center
         %img.circle{:src => image_url("icons/man.svg")}/
-      %a{:href => "#!name"}
-        %span.white-text.name John Doe
-      %a{:href => "#!email"}
-        %span.white-text.email jdandturk@gmail.com
-  %li
-    %a{:href => "#!"}
-      %i.material-icons> cloud
-      First Link With Icon
+      %span.white-text.name Sune Nilausen
+      %span.white-text.email sunenilausen@gmail.com
   %li
     = link_to 'About', '/index#about'
   %li
@@ -39,11 +31,3 @@
     = link_to 'Portfolio', '/portfolio'
   %li
     = link_to 'Blog', '/blog'
-  %li
-    %a{:href => "#!"} Second Link
-  %li
-    .divider
-  %li
-    %a.subheader Subheader
-  %li
-    %a.waves-effect{:href => "#!"} Third Link With Waves

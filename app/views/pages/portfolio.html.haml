@@ -1,37 +1,26 @@
 -# = render 'shared/menu', background_class: 'blue darken-3'
 
 -# #portfolio.blue.darken-1
-.container
-  %ul.tabs.tabs-fixed-width.transparent
-    %li.tab
-      %a.white-text{href: '#code'} Code
-    %li.tab
-      %a.white-text{href: '#art'} Art
-    %li.tab
-      %a.white-text{href: '#other'} Other
+-# .container
+  -# %ul.tabs.tabs-fixed-width.transparent
+  -#   %li.tab
+  -#     %a.white-text{href: '#code'} Code
+  -#   %li.tab
+  -#     %a.white-text{href: '#art'} Art
+  -#   %li.tab
+  -#     %a.white-text{href: '#other'} Other
   
 #code
   .portfolio-container
     = render partial: 'portfolio_item', locals: {image: 'portfolio/hotshotcowboy.png', title: 'Hot Show Showoff', content: 'Arcade android game in Unity3D', github: '', blog: ''}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/ScoutsSmall.png', title: 'Scouts!', content: 'Sidescrolling android game in Unity3D', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-#art
-  .portfolio-container
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/painting.jpg', title: 'Painting', content: 'This is some painting stuff!', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-#other
-  .portfolio-container
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/piano.jpg', title: 'Piano', content: 'This is my piano', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/couch.jpg', title: 'Couch', content: 'This is my couch', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Binary Search Tree', content: 'Course Project', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/csharp.png', title: 'Sockets Network', content: 'Course Project', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Polynomial Library', content: 'Course Project', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Classifying Traffic Maneuvers with an LSTM Network ', content: 'Pre-specialization Project', github: '', blog: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Early Classification of Traffic Maneuvers Using a Non-Myopic Approach', content: 'Master Thesis in Machine Learning', github: '', blog: ''}
+-# #art
+-#   .portfolio-container
 
-
+-# #other
+-#   .portfolio-container
