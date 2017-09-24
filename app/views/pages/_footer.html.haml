@@ -3,30 +3,30 @@
     .d-flex.justify-content-between
       %strong.grey-text.text-lighten-4 Feel free to contact me on Linkedin or by mail: sunenilausen@gmail.com
       #connect
-        %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-3"}
+        %a{href: t('pages.links.github'), class: "btn-floating btn-large waves-effect waves-light orange darken-4"}
           %i.fa.fa-github
-        %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-2"}
+        %a{href: t('pages.links.instagram'), class: "btn-floating btn-large waves-effect waves-light orange darken-3"}
           %i.fa.fa-instagram
-        %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-1"}
+        %a{href: t('pages.links.linkedin'), class: "btn-floating btn-large waves-effect waves-light orange darken-2"}
           %i.fa.fa-linkedin
+        %a{href: t('pages.links.mail'), class: "btn-floating btn-large waves-effect waves-light orange darken-1"}
+          %i.fa.fa-envelope-o
       #connect-small.fixed-action-btn
         .btn-floating.btn-large.orange
           %i.fa.fa-expand
         %ul
           %li
-            %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-3"}
+            %a{href: t('pages.links.github'), class: "btn-floating btn-large waves-effect waves-light orange darken-4"}
               %i.fa.fa-github
           %li
-            %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-2"}
+            %a{href: t('pages.links.instagram'), class: "btn-floating btn-large waves-effect waves-light orange darken-3"}
               %i.fa.fa-instagram
           %li
-            %a{href: "http://www.github.com/sunenilausen", class: "btn-floating btn-large waves-effect waves-light orange darken-1"}
+            %a{href: t('pages.links.linkedin'), class: "btn-floating btn-large waves-effect waves-light orange darken-2"}
               %i.fa.fa-linkedin
-
-
-          
-
-
+          %li
+            %a{href: t('pages.links.mail'), class: "btn-floating btn-large waves-effect waves-light orange darken-1"}
+              %i.fa.fa-envelope-o
 
   .footer-copyright
     .container
@@ -42,6 +42,6 @@
         and
         %a.orange-text.text-lighten-3{:href => "https://www.flaticon.com/authors/popcorns-arts", :title => "Icon Pond"} Icon Pond
         from
-        %a.orange-text.text-lighten-3{:href => "https://www.flaticon.com/", :title => "Flaticon"} www.flaticon.com
+        %a.orange-text.text-lighten-3{:href => "https://www.flaticon.com/", :title => "Flaticon"} flaticon
         is licensed by
         %a.orange-text.text-lighten-3{:href => "http://creativecommons.org/licenses/by/3.0/", :target => "_blank", :title => "Creative Commons BY 3.0"} CC 3.0 BY

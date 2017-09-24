@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  pages:
+    links:
+      github: "http://github.com/sunenilausen"
+      linkedin: "https://www.linkedin.com/in/sunenilausen/"
+      instagram: "https://www.instagram.com/sunenilausen/"
+      mail: "mailto:sunenilausen@gmail.com"
