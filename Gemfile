@@ -58,6 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'haml'
 gem "haml-rails", "~> 0.9"
-gem 'pg'
+# gem 'pg'
 gem 'font-awesome-rails'
 gem 'materialize-sass'
