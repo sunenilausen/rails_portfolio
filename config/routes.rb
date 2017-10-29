@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'games/hotshotshowoff'
+
   get 'index', to: 'pages#index'
   get 'portfolio', to: 'pages#portfolio'
   get 'cv', to: 'pages#cv'
