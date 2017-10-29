@@ -6,7 +6,11 @@
       .portfolio-title= title
       = content
     .card-action
-      - if github.present?
+      - if defined? github
         %a{href: "#{github}"} Github
-      - if blog.present?
+      - if defined? blog
         %a{href: "#{blog}"} Blog
+      - if defined? game
+        %a{href: "#{game}"} Play it here
+      - if defined? link
+        %a{href: "#{link}"} Link to come

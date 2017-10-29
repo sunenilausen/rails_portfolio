@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'games/hotshotshowoff'
+  get 'games/hotshotshowoff', as: :hot_shot_showoff
 
   get 'index', to: 'pages#index'
   get 'portfolio', to: 'pages#portfolio'

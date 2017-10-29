@@ -1,0 +1,28 @@
+.footer-text {
+  flex: 1 0 0;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  #connect-small {
+    display: inline;
+  }
+
+  #connect {
+    display: none;
+  }
+}
+
+#connect > .btn-floating {
+  margin-left: 0.8em;
+  margin-bottom: -2.3em;
+}
+
+#connect {
+  margin-bottom: 0.5em;
+}
+
+#connect-small {
+  display: none;
+}
