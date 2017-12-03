@@ -13,9 +13,9 @@
 #code
   .portfolio-container
     = render partial: 'portfolio_item', locals: {image: 'portfolio/hotshotcowboy.png', title: 'Hot Show Showoff', content: 'Arcade android game in Unity3D', game: hot_shot_showoff_path}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/ScoutsSmall.png', title: 'Scouts!', content: 'Sidescrolling android game in Unity3D', link: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Binary Search Tree', content: 'Course Project', link: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/csharp.png', title: 'Sockets Network', content: 'Course Project', link: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/ScoutsSmall.png', title: 'Scouts!', content: 'Sidescrolling android game in Unity3D', game: 'https://play.google.com/store/apps/details?id=dk.dadiu.scouts&hl=en'}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Binary Search Tree', content: 'Course Project', github: 'https://github.com/sunenilausen/BST'}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/csharp.png', title: 'Sockets Network', content: 'Course Project', github: 'https://github.com/sunenilausen/SocketsNetwork'}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Polynomial Library', content: 'Course Project', link: ''}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Classifying Traffic Maneuvers with an LSTM Network ', content: 'Pre-specialization Project', link: ''}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Early Classification of Traffic Maneuvers Using a Non-Myopic Approach', content: 'Master Thesis in Machine Learning', link: ''}
