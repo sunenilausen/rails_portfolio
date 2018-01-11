@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'resume/download'
-  get 'resume/new'
+  get 'resume/english'
+  get 'resume/danish'
 
   get 'games/hotshotshowoff', as: :hot_shot_showoff
 

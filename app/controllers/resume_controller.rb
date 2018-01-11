@@ -1,9 +1,13 @@
 class ResumeController < ApplicationController
   layout 'resume'
 
-  def download
+  def danish
+    # respond_to do |format|
+    #   format.html
+    #   format.pdf send_data pdf version?
+    # end
   end
 
-  def new
+  def english
   end
 end
