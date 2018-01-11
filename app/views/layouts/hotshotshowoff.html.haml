@@ -9,9 +9,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %script{:src => "hotshotshowoff/UnityLoader.js"}
     :javascript
-      document.addEventListener("turbolinks:load", function() {
-        var gameInstance = UnityLoader.instantiate("gameContainer", "hotshotshowoff/Build.json", {onProgress: UnityProgress});
-      })
+      var gameInstance = UnityLoader.instantiate("gameContainer", "hotshotshowoff/Build.json", {onProgress: UnityProgress});
   %body
     .webgl-content
       #gameContainer{:style => "width: 1280px; height: 720px"}

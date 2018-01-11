@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'resume/download'
+  get 'resume/new'
+
   get 'games/hotshotshowoff', as: :hot_shot_showoff
 
   get 'index', to: 'pages#index'
