@@ -10,4 +10,7 @@ class ResumeController < ApplicationController
 
   def english
   end
+
+  def coverletter
+  end
 end
