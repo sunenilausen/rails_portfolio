@@ -12,13 +12,17 @@
   
 #code
   .portfolio-container
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/rails.png', title: 'Carlsberg Pirates', content: 'Website for teaching children code. Made with Ruby on Rails and Material Design', link: 'http://www.carlsbergpirates.dk', github: "https://github.com/sunenilausen/carlsbergpirates"}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/hotshotcowboy.png', title: 'Hot Show Showoff', content: 'Arcade android game in Unity3D', game: hot_shot_showoff_path}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Early Classification of Traffic Maneuvers Using a Non-Myopic Approach', content: 'Master Thesis in Machine Learning'}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/ScoutsSmall.png', title: 'Scouts!', content: 'Sidescrolling android game in Unity3D', game: 'https://play.google.com/store/apps/details?id=dk.dadiu.scouts&hl=en'}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Binary Search Tree', content: 'Course Project', github: 'https://github.com/sunenilausen/BST'}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/rails.png', title: 'MakeMeHost DiscordBot', content: 'Discord bot that monitors makemehost.com for interesting Warcraft III maps and reports into your discord channels', github: "https://github.com/sunenilausen/mmhdiscord"}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/radarkritik.png', title: 'RadarKritik', content: 'A Unity3D game in C# about source criticism and fake news. Web app made with Ruby on Rails', link: "http://www.radarkritik.dk"}
     = render partial: 'portfolio_item', locals: {image: 'portfolio/csharp.png', title: 'Sockets Network', content: 'Course Project', github: 'https://github.com/sunenilausen/SocketsNetwork'}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Polynomial Library', content: 'Course Project', link: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Classifying Traffic Maneuvers with an LSTM Network ', content: 'Pre-specialization Project', link: ''}
-    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Early Classification of Traffic Maneuvers Using a Non-Myopic Approach', content: 'Master Thesis in Machine Learning', link: ''}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/cpp.png', title: 'Polynomial Library', content: 'Course Project'}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/scala.png', title: 'Classifying Traffic Maneuvers with an LSTM Network ', content: 'Pre-specialization Project'}
+    = render partial: 'portfolio_item', locals: {image: 'portfolio/roberts.png', title: 'Roberts Rebellion', content: 'Warcraft III Custom Map based on the ASOIAF universe and the RTS spawn based WC3 genre', github: "https://github.com/sunenilausen/robertsrebellion"}
 -# #art
 -#   .portfolio-container
 
