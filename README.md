@@ -5,8 +5,8 @@
 
 ## Configuration
 	gem install bundler
-  bundle install
+ 	bundle install
 
 ## Start
-  rails s
+  	rails s
 
