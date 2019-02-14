@@ -111,6 +111,7 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    pg (1.1.4)
     public_suffix (2.0.5)
     puma (3.9.1)
     rack (2.0.3)
@@ -214,6 +215,7 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   materialize-sass
+  pg
   puma (~> 3.7)
   rails (~> 5.1.2)
   sass-rails (~> 5.0)
@@ -228,4 +230,4 @@ DEPENDENCIES
   webpacker
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.1

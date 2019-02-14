@@ -41,6 +41,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -58,7 +59,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'haml'
 gem "haml-rails", "~> 0.9"
-gem 'sqlite3'
-# gem 'pg'
+gem 'pg'
 gem 'font-awesome-rails'
 gem 'materialize-sass'

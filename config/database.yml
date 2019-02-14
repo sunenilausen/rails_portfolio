@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: sqlite3
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
@@ -20,25 +20,15 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
-  port: 4000
-
-
-# development:
-#   adapter: postgresql
-#   database: my_database_development
-#   pool: 5
-#   timeout: 5000
-# test:
-#   adapter: postgresql
-#   database: my_database_test
-#   pool: 5
-#   timeout: 5000
-
 # production:
-#   adapter: postgresql
-#   database: my_database_production
-#   pool: 5
-#   timeout: 5000
+#   adapter: mysql2
+#   host: db
+#   username: root
+#   password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
+
+production:
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  encoding: unicode
+  database: myapp_production
+  username: myapp
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
