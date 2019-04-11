@@ -5,7 +5,12 @@
         %h1.white-text.small-caps.center About
         .hero-underline
     %p.white-text 
-      My name is Sune and i am a 26 year old developer who loves making sites, apps, games and more. I have a MSc. in Computer Science, with my master thesis being in machine intelligence. Development and design of modern software is my passion and i am always interesting in creating something creative. I grew up on the countryside near Grønbjerg, a little westjutlandic village. As a person I am always ready for new and exciting projects, as it is a great way to expand my competences.
+      My name is Sune and i am a
+      - if DateTime.now < DateTime.parse("1991-04-17").yday
+        = ( DateTime.now.year - 1991)
+      - else
+        = ( DateTime.now.year - 1992)
+      year old developer who loves making sites, apps, games and more. I have a MSc. in Computer Science, with my master thesis being in machine intelligence. Development and design of modern software is my passion and i am always interesting in creating something creative. I grew up on the countryside near Grønbjerg, a little westjutlandic village. As a person I am always ready for new and exciting projects, as it is a great way to expand my competences.
 
   .about-item
     = render partial: 'about_item', locals: {icon: 'keyboarddoc', content: 'Normally I develop on my laptop with Archlinux and Gnome, where i prefer Ruby on Rails and JavaScript frameworks. However for Unity3D, photoshop, Java, .NET I usually switch to Windows. I use Sublime 3, with a bunch of plugins and I love it. Weekly i also volunteer to teach programming and game development to children/youth at Coding Pirates'}
