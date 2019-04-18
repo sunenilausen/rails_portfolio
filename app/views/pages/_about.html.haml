@@ -6,7 +6,7 @@
         .hero-underline
     %p.white-text 
       My name is Sune and i am a
-      - if DateTime.now < DateTime.parse("1991-04-17").yday
+      - if DateTime.now.yday < DateTime.parse("1991-04-17").yday
         = ( DateTime.now.year - 1991)
       - else
         = ( DateTime.now.year - 1992)
