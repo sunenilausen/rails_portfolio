@@ -5,7 +5,12 @@
   %hr
   .row
     .col-xs-10
-      Jeg er en 26 årig Softwareudvikler med 1,5 års fuldtidsarbejdserfaring og en kandidat i Datalogi. Elsker at udvikle hjemmesider, apps, spil med moderne software og metoder. Altid klar på nye udfordrende og spændende på projekter for at udvikle brugbare kompetencer. Min natur er at være kreativ, rolig, social og venlig.
+      Jeg er en
+      - if DateTime.now.yday > DateTime.parse("1991-04-17").yday
+        = ( DateTime.now.year - 1991)
+      - else
+        = ( DateTime.now.year - 1992)
+      årig Softwareudvikler med 1,5 års fuldtidsarbejdserfaring og en kandidat i Datalogi. Jeg elsker at udvikle hjemmesider, apps, spil med moderne software og metoder. Derudover er jeg altid klar på nye udfordrende og spændende på projekter for at udvikle brugbare kompetencer. Af natur er jeg kreativ, rolig, social og venlig.
     .col-xs-2
       = image_tag('DSEmesse.png', class: 'sideportrait')
 
@@ -42,7 +47,7 @@
         .col-xs-3.text-right Github:
         .col-xs-9
           %a{href: 'https://github.com/sunenilausen'} github.com/sunenilausen
-  %h2 Erfaring
+  %h2 Erhvervserfaring
   %hr
   .row
     .col-xs-2.text-right September 2016 -
@@ -83,7 +88,7 @@
   .row
     .col-xs-2.text-right September 2014
     .col-xs-10 Bachelor i Datalogi. Aalborg Universitet, Aalborg
-    .col-xs-offset-2.col-xs-10 
+    .col-xs-offset-2.col-xs-10
       I mit favorit projekt skabte vi en intelligent skak AI (i C#), hvor vi brugte MI teknikker som minimax, utility, αβ-pruning, og distribuerede beregningen over flere PC’er med APHID algoritmen.
   %br
   .row

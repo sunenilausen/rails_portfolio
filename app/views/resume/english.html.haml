@@ -5,7 +5,12 @@
   %hr
   .row
     .col-xs-10
-      I am a 26 year old Software developer with 1.5 years fulltime work experience and a MSc. graduate in Computer Science. Spending time building web, app and game development with modern software and practices is my passion. Always ready for new and exciting projects to learn or hone useful skills. My nature is to be creative, calm, social and friendly.
+      I am a
+      - if DateTime.now.yday > DateTime.parse("1991-04-17").yday
+        = ( DateTime.now.year - 1991)
+      - else
+        = ( DateTime.now.year - 1992)
+      year old Software developer with 1.5 years fulltime work experience and a MSc. graduate in Computer Science. Spending time building web, app and game development with modern software and practices is my passion. Always ready for new and exciting projects to learn or hone useful skills. My nature is to be creative, calm, social and friendly.
     .col-xs-2
       = image_tag('DSEmesse.png', class: 'sideportrait')
 
@@ -43,25 +48,6 @@
         .col-xs-9
           %a{href: 'https://github.com/sunenilausen'} github.com/sunenilausen
 
-  %h2 Education
-  %hr
-  .row
-    .col-xs-2.text-right June 2016
-    .col-xs-10 Master of Science in Computer Science. Aalborg University, Aalborg
-    .col-xs-offset-2.col-xs-10
-      Early Classification of Traffic Maneuvers using a Non-Myopic Approach. In the master thesis, machine intelligence, we expanded a non-myopic method and implemented LSTM neural networks (in Scala) for classification of traffic maneuvers.
-    .col-xs-offset-2.col-xs-10 Grade average: 9.5
-  %br
-  .row
-    .col-xs-2.text-right September 2014
-    .col-xs-10 Bachelor in Computer Science. Aalborg University, Aalborg
-    .col-xs-offset-2.col-xs-10 
-      In my favorite semester project we created a Chess AI (in C#), using MI techniques like minimax, utility, αβ-pruning, and distributed the calculation across several PC’s using the APHID algorithm
-  %br
-  .row
-    .col-xs-2.text-right June 2010
-    .col-xs-10 Higher technical exam (htx) in English, Communication/IT and Math. UCH, Holstebro
-
   %h2 Experience
   %hr
   .row
@@ -90,6 +76,25 @@
     .col-xs-10 Programmer at production team 3 DADIU
     .col-xs-offset-2.col-xs-10
       Developed 2 Android games in Unity3D: Scouts and Hot Shot Showoff. As a programmer in a production team of 18 people I acquired competences in Scrum, Git, UML, and C#.
+
+  %h2 Education
+  %hr
+  .row
+    .col-xs-2.text-right June 2016
+    .col-xs-10 Master of Science in Computer Science. Aalborg University, Aalborg
+    .col-xs-offset-2.col-xs-10
+      Early Classification of Traffic Maneuvers using a Non-Myopic Approach. In the master thesis, machine intelligence, we expanded a non-myopic method and implemented LSTM neural networks (in Scala) for classification of traffic maneuvers.
+    .col-xs-offset-2.col-xs-10 Grade average: 9.5
+  %br
+  .row
+    .col-xs-2.text-right September 2014
+    .col-xs-10 Bachelor in Computer Science. Aalborg University, Aalborg
+    .col-xs-offset-2.col-xs-10
+      In my favorite semester project we created a Chess AI (in C#), using MI techniques like minimax, utility, αβ-pruning, and distributed the calculation across several PC’s using the APHID algorithm
+  %br
+  .row
+    .col-xs-2.text-right June 2010
+    .col-xs-10 Higher technical exam (htx) in English, Communication/IT and Math. UCH, Holstebro
 
   %h2 Skills
   %hr
