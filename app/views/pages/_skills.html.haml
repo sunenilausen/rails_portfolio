@@ -1,10 +1,14 @@
 .container
   .row
     = render partial: 'skill', locals: {title: 'Ruby on Rails', body: "My current favorite framework is Ruby on Rails, which i use to make API's, websites (like this one) and gems. Some of my competences are developing, scaling, designing and testing a modern website or API.", color_class: 'red darken-4'}
-    = render partial: 'skill', locals: {title: 'HTML and CSS', body: "It is hard to make pretty and usable websites without getting proficient in HTML and CSS. To speed up my workflow, i acutally use HAML and SASS. Currently i also use LIQUID.", color_class: 'green darken-3'}
-    = render partial: 'skill', locals: {title: 'JavaScript', body: "JavaScript is also unavoidable when making websites. With Railsi mostly use CoffeeScript to have concise and ruby-like code. I have also been buliding a blog and experimenting with React and React-Native in some projects. Additionally i have been learning NodeJS and Express and hope to use it for a project.", color_class: 'yellow darken-2'}
+
+    = render partial: 'skill', locals: {title: 'HTML and CSS', body: "It is hard to make pretty and usable websites without getting proficient in HTML and CSS. To speed up my workflow, i use HAML and SASS. I also use LIQUID and HAML often.", color_class: 'green darken-3'}
+
+    = render partial: 'skill', locals: {title: 'JavaScript', body: "JavaScript is also unavoidable when making websites. These day it is a lot of ES6. I  also have experience using CoffeeScript. I have also been experimenting with React, React-Native, NodeJS and Express in some projects.", color_class: 'yellow darken-2'}
 
   .row
-    = render partial: 'skill', locals: {title: 'C#, Unity3D and .NET', body: "At Aalborg University i used C# for many projects, including some Unity3D games which you can find here. Modern .NET is also tempting to revisit and experiment with.", color_class: 'blue darken-2'}
-    = render partial: 'skill', locals: {title: 'Databases', body: 'Another ubiquitous tool in webdevelopment is databases. My preference is currently PostgreSQL and MongoDB. However MySQL, InfluxDB, Redis, Sqlite and other databases are also very useful.', color_class: 'purple'}
-    = render partial: 'skill', locals: {title: 'Scala', body: 'As part of my master thesis in Machine Intelligence, i used Scala to create an LSTM neural network that predicts maneuvers in highway traffic. I generally find functional programming very interesting and Scala definitely makes it very enjoyable. Currently i have my eyes set on Elm and/or Elixir.', color_class: 'red'}
+    = render partial: 'skill', locals: {title: 'C#, Unity3D and .NET', body: "At Aalborg University i used C# for many projects. I definitely use a lot of C# for Unity3D projects, you can find some games in my portfolio. Modern .NET is also tempting to revisit and experiment with.", color_class: 'blue darken-2'}
+
+    = render partial: 'skill', locals: {title: 'Databases', body: 'Another ubiquitous tool in webdevelopment is databases. My preference is currently PostgreSQL. However MongoDB, MySQL, InfluxDB, Redis, SQLite and other databases are also very useful.', color_class: 'purple'}
+
+    = render partial: 'skill', locals: {title: 'Machine Learning', body: 'My master thesis specialization was in Machine Intelligence. I used Scala to create an LSTM neural network that predicts maneuvers in highway traffic. I generally find functional programming very interesting and Scala definitely makes it very enjoyable.', color_class: 'red'}
