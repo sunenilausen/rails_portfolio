@@ -27,8 +27,5 @@ test:
 #   password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
 
 production:
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: unicode
-  database: myapp_production
-  username: myapp
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  <<: *default
+  database: db/production.sqlite3
