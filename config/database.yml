@@ -25,7 +25,3 @@ test:
 #   host: db
 #   username: root
 #   password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
-
-production:
-  <<: *default
-  database: db/production.sqlite3
